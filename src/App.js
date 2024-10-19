@@ -1,11 +1,29 @@
 import React from 'react'
 import Navbar from './components/Navbar'
-import Carousel from './components/Carousel'
+import About from './components/About'
+import Location from './components/Location'
+import Back from './components/Back'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
 const App = () => {
   return (
     <div>
-      <Navbar/>
-      <Carousel/>
+      <Router>
+        <Navbar/>
+          <Routes>
+          <Route exact path="/" element={<Back />} />
+            <Route exact path="/location" element={<Location />} />
+            <Route exact path="/about" element={<About/>} />
+
+          </Routes>
+      </Router>
+      {/* <Navbar/>
+      <Location/>
+      <About/> */}
+      
     </div>
   )
 }
