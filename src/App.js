@@ -24,6 +24,12 @@ import Nopi from './components/festival_cards/Nopi'
 import Gadi from './components/festival_cards/Gadi'
 import Kumkumarchane from './components/festival_cards/Kumkumarchane'
 import History from './components/History'
+import Event_Chaturdasi from './components/special_events/Event_Chaturdasi'
+import Event_Utsav from './components/special_events/Event_Utsav'
+import Event_bandihabba from './components/special_events/Event_bandihabba'
+import Event_gadi from './components/special_events/Event_gadi'
+import Event_kumkumarchane from './components/special_events/Event_kumkumarchane'
+import Event_navratri from './components/special_events/Event_navratri'
 const App = () => {
   return (
     <div>
@@ -48,6 +54,12 @@ const App = () => {
             <Route exact path="/gadi" element={<Gadi/>} /> 
             <Route exact path="/kumkumarchane" element={<Kumkumarchane/>} />
             <Route exact path="/history" element={<History/>} />
+            <Route exact path="/event1" element={<Event_Chaturdasi/>} />
+            <Route exact path="/event2" element={<Event_Utsav/>} />
+            <Route exact path="/event3" element={<Event_bandihabba/>} />
+            <Route exact path="/event4" element={<Event_gadi/>} />
+            <Route exact path="/event5" element={<Event_kumkumarchane/>} />
+            <Route exact path="/event6" element={<Event_navratri/>} />
           </Routes>
       </Router>
       {/* <Navbar/>
