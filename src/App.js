@@ -30,6 +30,7 @@ import Event_bandihabba from './components/special_events/Event_bandihabba'
 import Event_gadi from './components/special_events/Event_gadi'
 import Event_kumkumarchane from './components/special_events/Event_kumkumarchane'
 import Event_navratri from './components/special_events/Event_navratri'
+import Footer from './components/Footer'
 const App = () => {
   return (
     <div>
@@ -65,7 +66,7 @@ const App = () => {
       {/* <Navbar/>
       <Location/>
       <About/> */}
-      
+      {/* <Footer></Footer> */}
     </div>
   )
 }
